@@ -1,0 +1,60 @@
+<link rel="manifest" href="manifest.json">
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>PhonIQ</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="app">
+  <!-- Main Menu -->
+  <div id="menuScreen" class="screen active">q
+    <h1 class="logo">PhonIQ</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button id="playBtn">Play</button>
+    <button id="settingsBtn">Settings</button>
+  </div>
+
+  <!-- Settings -->
+  <div id="settingsScreen" class="screen">
+    <h2>Settings</h2>
+    <label>
+      <input type="checkbox" id="soundToggle" checked>
+      Sound Effects
+    </label>
+    <button class="backBtn">Back</button>
+  </div>
+
+  <!-- Difficulty Select -->
+  <div id="difficultyScreen" class="screen">
+    <h2>Select Difficulty</h2>
+    <button class="difficultyBtn" data-level="easy">Easy</button>
+    <button class="difficultyBtn" data-level="medium">Medium</button>
+    <button class="difficultyBtn" data-level="hard">Hard</button>
+    <button class="backBtn">Back</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="gameScreen" class="screen">
+    <h2 id="gameHeader"></h2>
+    <p id="definition"></p>
+    <input type="text" id="answer" placeholder="Type the word..." autocomplete="off">
+    <div class="btnGroup">
+      <button id="playWordBtn">🔊 Word</button>
+      <button id="playPhonicsBtn">🔤 Phonics</button>
+    </div>
+    <button id="submitBtn">Submit</button>
+    <p id="feedback"></p>
+    <button id="nextBtn" style="display:none;">Next</button>
+    <button class="backBtn">Quit</button>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

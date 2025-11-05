@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #5c2d91, #a36cff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.logo {
+  font-size: 2em;
+  color: #5c2d91;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #7a42f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #622bc2;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
